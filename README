@@ -1,0 +1,12 @@
+Code highlight fails in JetBrains PyCharm on Jinja template with Babel placeholders.
+
+Babel uses _() function to translate text in Jinja2 templates.
+Simple function is highlighted ok, but function with placeholder fails.
+PyCharm takes first right bracket as a bracket that completes function _().
+You don't need to run code, just see test.html in PyCharm.
+
+JetBrains bug tracker: https://youtrack.jetbrains.com/issue/PY-14055
+
+Tested on:
+    PyCharm 3.4.1 Build #PY-135.1057
+    PyCharm 4.0.4 Build #PY-139.1001 
